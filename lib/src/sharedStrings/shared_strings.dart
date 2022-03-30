@@ -24,6 +24,8 @@ class _SharedStringsMaintainer {
       _index += 1;
     } else {
       _map[val]!.increaseCount();
+      _list.add(val);
+      _index += 1;
     }
   }
 
